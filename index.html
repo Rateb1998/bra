@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button Click Example</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Include Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<!-- Include Custom CSS -->
+	<style>
+		.container {
+			margin-top: 50px;
+		}
+		.hidden {
+			display: none;
+		}
+		.show {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>  بليز اكبس على  زر  وسيظهر لك شيى غريب لاتخرج قبل ان تقول سبحان الله </h1>
+		<button id="show-content" class="btn btn-primary">Show Content</button>
+		<div id="content" class="hidden">
+			<img src="BR.jpg" alt="Example Image">
+			<p>هذا الكائن الموجود في الصورة هو رجل مثل كل الرجال يتمتع ببعض الصفات التي يتمتع بها الرجل ولكن هناك عدو امور هي تعتبر سلبيات منها انه كهربجي يفتقد للتوال بحيث عندما يكون هناك توال في المجلس يفقد كل قواه العقلية بحيث يرتفع نسبة الغريزة الجنسية لعبط الطوال , شايف حاله كتير يعني مفكر حالة بيعرف يساوي اكلة تسئية ونحن منشان ما نكسر بختطره منجامله ومنقله انه طيبة الاكلة , يكثر الحديث عنه , وايضا يعتبر شيخ سلتة  اترك لكم المجال للنقاش  و </p>
+		</div>
+	</div>
+	<!-- Include jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<!-- Custom JavaScript -->
+	<script>
+		$(document).ready(function() {
+			$("#show-content").click(function() {
+				$("#content").toggleClass("hidden show");
+			});
+		});
+	</script>
+</body>
+</html>
